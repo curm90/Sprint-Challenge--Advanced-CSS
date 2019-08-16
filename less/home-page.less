@@ -3,6 +3,11 @@
 .home {
 
   .intro {
+    max-width: 800px;
+    .header-img img {
+      border-radius: 6px;
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +63,14 @@
       }
 
       .btn {
+        .main-button-style(@btn-bg-color, 30%);
+        transition: ease-out 0.2s;
+
+        &:hover {
+          background: lighten(@btn-bg-color, 12%);
+          cursor: pointer;
+          transition: ease-in 0.2s;
+        }
       }
     }
 
