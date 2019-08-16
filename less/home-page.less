@@ -89,15 +89,13 @@
         transition: ease-out 0.2s;
 
         &:hover {
-          background: lighten(@btn-bg-color, 12%);
-          cursor: pointer;
-          transition: ease-in 0.2s;
-          transform: scale(1.2);
+          .main-button-hover-style();
         }
 
         @media @phone {
-          width: 100%;
+          width: 85%;
           padding: 3rem 0;
+          margin: 0 auto;
         }
       }
     }

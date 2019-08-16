@@ -126,6 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.main-button-hover-style {
+  background: #394361;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  transform: scale(1.2);
+}
 * {
   box-sizing: border-box;
 }
@@ -294,8 +300,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 100%;
+    width: 85%;
     padding: 3rem 0;
+    margin: 0 auto;
   }
 }
 .home .walk .walk-img {
@@ -315,4 +322,62 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+h1 {
+  font-size: 2.6rem;
+  padding: 2rem;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-form form {
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  margin: 2rem 0;
+}
+.contact-form form input {
+  padding: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+  font-size: 2rem;
+  outline: none;
+  transition: ease-out 0.1s;
+}
+.contact-form form input:hover {
+  transform: scale(1.03);
+  transition: ease-in 0.1s;
+}
+.contact-form form textarea {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  outline: none;
+  width: 100%;
+}
+.contact-form form input[type="submit"] {
+  padding: 1rem;
+  border-radius: 6px;
+  color: #F6F6F6;
+  background: #22283A;
+  width: 30%;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: ease-out 0.2s;
+}
+.contact-form form input[type="submit"]:hover {
+  background: #394361;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  transform: scale(1.2);
+}
+@media (max-width: 500px) {
+  .contact-form form input[type="submit"] {
+    width: 80%;
+  }
 }
