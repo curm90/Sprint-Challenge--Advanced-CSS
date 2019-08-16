@@ -1,1 +1,27 @@
 // Navigation code here
+nav {
+  .custom-flex-layout(space-between, center);
+  flex-direction: column;
+  background: @nav-bg;
+  border-bottom: 1px solid @nav-border;
+  max-width: 900px;
+  padding: 1.8rem;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 4rem;
+    padding: 1.8rem 0;
+  }
+
+  ul {
+    .custom-flex-layout(center, center);
+    width: 100%;
+
+    a {
+      padding: 0 2rem;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @nav-font;
+    }
+  }
+}
