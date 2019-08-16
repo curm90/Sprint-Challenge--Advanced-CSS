@@ -335,9 +335,11 @@ footer {
 }
 .home .sign-up-form h3 {
   padding: 2rem;
+  text-align: center;
 }
 .home .sign-up-form p {
   padding: 2rem;
+  text-align: center;
 }
 .home .sign-up-form form {
   display: flex;
