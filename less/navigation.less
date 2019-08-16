@@ -17,6 +17,15 @@ nav {
     .custom-flex-layout(center, center);
     width: 100%;
 
+    li {
+      transition: ease-out 0.2s;
+
+      &:hover {
+        transform: scale(1.25);
+        transition: ease-in 0.2s;
+      }
+    }
+
     a {
       padding: 0 @padding-lg;
       font-size: 1.6rem;

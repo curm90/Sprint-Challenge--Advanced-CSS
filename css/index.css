@@ -181,6 +181,13 @@ nav ul {
   align-items: center;
   width: 100%;
 }
+nav ul li {
+  transition: ease-out 0.2s;
+}
+nav ul li:hover {
+  transform: scale(1.25);
+  transition: ease-in 0.2s;
+}
 nav ul a {
   padding: 0 2rem;
   font-size: 1.6rem;
@@ -283,6 +290,7 @@ footer {
   background: #394361;
   cursor: pointer;
   transition: ease-in 0.2s;
+  transform: scale(1.2);
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
