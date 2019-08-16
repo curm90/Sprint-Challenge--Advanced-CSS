@@ -258,6 +258,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
@@ -265,7 +266,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 2rem;
     margin: 2rem 0;
   }
 }
@@ -325,6 +326,55 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .sign-up-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.home .sign-up-form h3 {
+  padding: 2rem;
+}
+.home .sign-up-form p {
+  padding: 2rem;
+}
+.home .sign-up-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+.home .sign-up-form form input {
+  padding: 1rem;
+  margin: 2rem 0;
+  width: 90%;
+  font-size: 2rem;
+  outline: none;
+  transition: ease-out 0.1s;
+}
+.home .sign-up-form form input:hover {
+  transform: scale(1.03);
+  transition: ease-in 0.1s;
+}
+.home .sign-up-form form input[type="submit"] {
+  padding: 1rem;
+  border-radius: 6px;
+  color: #F6F6F6;
+  background: #22283A;
+  width: 30%;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: ease-out 0.2s;
+}
+.home .sign-up-form form input[type="submit"]:hover {
+  background: #7886b0;
+  color: #22283A;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  transform: scale(1.15);
+}
 h1 {
   font-size: 2.6rem;
   padding: 2rem;
@@ -355,14 +405,14 @@ h1 {
   transform: scale(1.03);
   transition: ease-in 0.1s;
 }
-.contact-form form textarea {
+.contact-form textarea {
   font-size: 2rem;
   padding: 1rem;
   margin: 2rem 0;
   outline: none;
   width: 100%;
 }
-.contact-form form input[type="submit"] {
+.contact-form input[type="submit"] {
   padding: 1rem;
   border-radius: 6px;
   color: #F6F6F6;
@@ -372,7 +422,7 @@ h1 {
   text-align: center;
   transition: ease-out 0.2s;
 }
-.contact-form form input[type="submit"]:hover {
+.contact-form input[type="submit"]:hover {
   background: #7886b0;
   color: #22283A;
   cursor: pointer;
@@ -380,7 +430,7 @@ h1 {
   transform: scale(1.15);
 }
 @media (max-width: 500px) {
-  .contact-form form input[type="submit"] {
+  .contact-form input[type="submit"] {
     width: 80%;
   }
 }
