@@ -1,6 +1,6 @@
 h1 {
   font-size: 2.6rem;
-  padding: @padding-lg;
+  padding: @spacing-lg;
 }
 
 .contact-form {
@@ -17,7 +17,7 @@ h1 {
 
     input {
       padding: 1rem;
-      margin: 2rem 0;
+      margin: @spacing-lg 0;
       width: 100%;
       font-size: 2rem;
       outline: none;
@@ -32,17 +32,17 @@ h1 {
     textarea {
       font-size: 2rem;
       padding: 1rem;
-      margin: 2rem 0;
+      margin: @spacing-lg 0;
       outline: none;
       width: 100%;
     }
 
     input[type="submit"] {
-      .main-button-style(@btn-bg-color, 30%);
+      .base-button-style(@btn-bg-color, 30%);
       transition: ease-out 0.2s;
 
       &:hover {
-        .main-button-hover-style();
+        .base-button-hover-style();
       }
 
       @media @phone {

@@ -5,7 +5,7 @@
   align-items: @align;
 }
 
-.main-button-style(@background, @width) {
+.base-button-style(@background, @width) {
   padding: 1rem;
   border-radius: 6px;
   color: @wild-sand;
@@ -15,11 +15,12 @@
   text-align: center;
 }
 
-.main-button-hover-style {
-  background: lighten(@btn-bg-color, 12%);
+.base-button-hover-style {
+  background: lighten(@btn-bg-color, 40%);
+  color: @btn-bg-color;
   cursor: pointer;
   transition: ease-in 0.2s;
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 @phone: ~"(max-width: 500px)";
