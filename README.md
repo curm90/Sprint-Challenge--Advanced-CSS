@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites respond to the size of the browser at any given point and smoothly transitions through whatever the width of the screen is. Whereas adaptive website changes the layout at certain points, and snaps to a different design at that certain width.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means you start off structuring and styling the website or webapp to look on mobile and then incorporate min-width media queries to make it look good on tablets and desktop screen sizes. Desktop first is the opposite. Make your app look good on large or desktop screens and set max-width media queries to make it look good on tablet and mobile screen sizes.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It allows us to be lazy and use a base 10 math conversion. E.g 10px easily converts to 1rem. It just makes it easier to figure out how many rems we need to use relative to the pixel unit.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A pre-processor is just an extension of CSS, with advanced features that allow us to keep our code leaner and add more features while writing less and easier to maintain code.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love the fact that you can separate all your less into separate smaller and easier to maintain files. And then how it all gets compiled into one big css file that the browser can understand.
+Just getting used to the full power of the chosen pre-processor can take me a while. I find myself not utilizing all they have to offer. But I guess i will get better and understand the more I use them.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -1,1 +1,40 @@
 // Mixins Here
+.custom-flex-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.base-button-style(@background, @width) {
+  padding: 1rem;
+  border-radius: 6px;
+  color: @wild-sand;
+  background: @background;
+  width: @width;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.base-button-hover-style {
+  background: lighten(@btn-bg-color, 40%);
+  color: @btn-bg-color;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  transform: scale(1.15);
+}
+
+.base-input-style(@width) {
+  padding: 1rem;
+  margin: @spacing-lg 0;
+  width: @width;
+  font-size: 2rem;
+  outline: none;
+  transition: ease-out 0.1s;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: ease-in 0.1s
+  }
+}
+
+@phone: ~"(max-width: 500px)";

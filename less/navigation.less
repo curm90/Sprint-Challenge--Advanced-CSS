@@ -1,1 +1,36 @@
 // Navigation code here
+nav {
+  .custom-flex-layout(space-between, center);
+  flex-direction: column;
+  background: @nav-bg;
+  border-bottom: 1px solid @nav-border;
+  max-width: 900px;
+  padding-bottom: @spacing-lg;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 4rem;
+    padding: @spacing-lg 0;
+  }
+
+  ul {
+    .custom-flex-layout(center, center);
+    width: 100%;
+
+    li {
+      transition: ease-out 0.2s;
+
+      &:hover {
+        transform: scale(1.25);
+        transition: ease-in 0.2s;
+      }
+    }
+
+    a {
+      padding: 0 @spacing-lg;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @nav-font;
+    }
+  }
+}

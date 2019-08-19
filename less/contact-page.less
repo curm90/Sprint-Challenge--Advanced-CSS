@@ -1,0 +1,48 @@
+h1 {
+  font-size: 2.6rem;
+  padding: @spacing-lg;
+  margin-top: @spacing-lg;
+
+  @media @phone {
+    text-align: center;
+  }
+}
+
+.contact-form {
+  .custom-flex-layout(center, center);
+  flex-direction: column;
+
+  form {
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem;
+    border: 1px solid @main-border-color;
+    border-radius: 6px;
+    margin: 2rem 0;
+
+    input {
+      .base-input-style(100%);
+      }
+    }
+
+    textarea {
+      font-size: 2rem;
+      padding: 1rem;
+      margin: @spacing-lg 0;
+      outline: none;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      .base-button-style(@btn-bg-color, 30%);
+      transition: ease-out 0.2s;
+
+      &:hover {
+        .base-button-hover-style();
+      }
+
+      @media @phone {
+        width: 80%;
+      }
+    }
+  }

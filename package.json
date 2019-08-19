@@ -1,0 +1,15 @@
+{
+  "name": "sprint-challenge-2",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "live-server",
+    "less": "less-watch-compiler less css index.less"
+  },
+
+  "homepage": "https://github.com/curm90/Sprint-Challenge--Advanced-CSS#readme",
+  "dependencies": {
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0",
+    "live-server": "^1.2.1"
+  }
+}
